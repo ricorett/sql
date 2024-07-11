@@ -46,8 +46,10 @@ INSERT INTO Track (track_name, duration, artist_id, album_id)
 SELECT 'Last Time', '00:03:34', a.id, al.id FROM Artist a, Album al WHERE a.artist_name = 'Becky Hills' AND al.album_name = 'Only Honest on the Weekend';
 INSERT INTO Track (track_name, duration, artist_id, album_id)
 SELECT 'Custer', '00:04:41', a.id, al.id FROM Artist a, Album al WHERE a.artist_name = 'Slipknot' AND al.album_name = '.5: The Gray Chapter';
-INSERT INTO Track (track_name, duration, artist_id, album_id)
-SELECT 'My Heart Goes (La Di Da)', '00:02:28', a.id, al.id FROM artist a, album al WHERE a.artist_name = 'Becky Hill' AND al.album_name  = 'Only Honest on the Weekend';
+INSERT INTO Track (track_name, duration, artist_id, album_id) 
+VALUES ('My Heart Goes (La Di Da)', '00:02:28', 4, 4);
+--INSERT INTO Track (track_name, duration, artist_id, album_id)
+--SELECT 'My Heart Goes (La Di Da)', '00:02:28', a.id, al.id FROM artist a, album al WHERE a.artist_name = 'Becky Hill' AND al.album_name  = 'Only Honest on the Weekend';
 
 INSERT INTO ArtistAlbum (album_id, artist_id) 
 SELECT al.id, a.id FROM Album al, Artist a WHERE al.album_name = '.5: The Gray Chapter' AND a.artist_name = 'Slipknot';
